@@ -39,6 +39,7 @@ build/Release
 
 # Dependency directories
 node_modules/
+**/node_modules/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -68,6 +69,8 @@ web_modules/
 # dotenv environment variable files
 .env
 .env.*
+apps/*/.env
+apps/*/.env.*
 !.env.example
 
 # parcel-bundler cache (https://parceljs.org/)
@@ -77,6 +80,11 @@ web_modules/
 # Next.js build output
 .next
 out
+apps/client/.next/
+apps/server/dist/
+apps/server/build/
+apps/*/coverage/
+apps/*/build/
 
 # Nuxt.js build / generate output
 .nuxt

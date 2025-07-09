@@ -1,0 +1,15 @@
+{
+  "name": "nou",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/client",
+    "devserver": "npm run dev -w apps/server"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  }
+}
